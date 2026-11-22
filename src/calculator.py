@@ -1,21 +1,50 @@
-class Calculator:
-    def __init__(self):
-        self.result = 0
+from typing import Union
 
-    def add(self, a, b):
-        self.result = a + b
-        return self.result
+Number = Union[int, float]
 
-    def subtract(self, a, b):
-        self.result = a - b
-        return self.result
 
-    def multiply(self, a, b):
-        self.result = a * b
-        return self.result
+def add(a: Number, b: Number) -> Number:
+    """
+    Return the sum of *a* and *b*.
 
-    def divide(self, a, b):
-        if b == 0:
-            raise ValueError("Cannot divide by zero")
-        self.result = a / b
-        return self.result
+    >>> add(1, 2)
+    3
+    """
+    return a + b
+
+
+def subtract(a: Number, b: Number) -> Number:
+    """
+    Return the difference of *a* and *b*.
+
+    >>> subtract(5, 3)
+    2
+    """
+    return a - b
+
+
+def multiply(a: Number, b: Number) -> Number:
+    """
+    Return the product of *a* and *b*.
+
+    >>> multiply(4, 3)
+    12
+    """
+    return a * b
+
+
+def divide(a: Number, b: Number) -> Number:
+    """
+    Return the quotient of *a* divided by *b*.
+
+    Raises
+    ------
+    ValueError
+        If *b* is zero.
+
+    >>> divide(10, 2)
+    5.0
+    """
+    if b == 0:
+        raise ValueError("Division by zero is not allowed")
+    return a / b
