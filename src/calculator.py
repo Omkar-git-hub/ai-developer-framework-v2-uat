@@ -1,24 +1,21 @@
-﻿"""Basic calculator module for AI Developer Framework UAT."""
+class Calculator:
+    def __init__(self):
+        self.result = 0
 
+    def add(self, a, b):
+        self.result = a + b
+        return self.result
 
-def add(a, b):
-    """Return the sum of two values."""
-    return a + b
+    def subtract(self, a, b):
+        self.result = a - b
+        return self.result
 
+    def multiply(self, a, b):
+        self.result = a * b
+        return self.result
 
-def subtract(a, b):
-    """Return the difference between two values."""
-    return a - b
-
-
-def multiply(a, b):
-    """Return the product of two values."""
-    return a * b
-
-
-def divide(a, b):
-    """Return the division result."""
-    if b == 0:
-        raise ZeroDivisionError("Cannot divide by zero")
-
-    return a / b
+    def divide(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        self.result = a / b
+        return self.result
