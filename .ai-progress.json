@@ -3,11 +3,12 @@
     "repository_name": "",
     "current_day": 1,
     "completed_tasks": [
-        "Implement Addition"
+        "Implement Addition",
+        "Implement Subtraction"
     ],
     "completed_commits": 0,
     "last_commit": "",
-    "project_progress": 1,
+    "project_progress": 2,
     "status": "idle",
     "execution_stage": "IDLE",
     "last_execution_at": "",
