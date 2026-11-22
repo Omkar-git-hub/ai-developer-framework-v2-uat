@@ -1,2 +1,30 @@
-# ai-developer-framework-v2-uat
-Disposable end-to-end UAT project for validating AI Developer Framework v2.0.0 multi-repository execution, scheduling, recovery, progress tracking, and Git workflow.
+@'
+# AI Developer Framework v2.0.0 UAT Project
+
+This is a disposable test project used to validate AI Developer Framework v2.0.0.
+
+## Purpose
+
+Test the framework's real-world capabilities:
+
+- Project plan reading
+- AI task planning
+- Code generation and modification
+- Validation and test execution
+- Task completion tracking
+- Daily progress persistence
+- Git commit and push
+- Multi-repository execution
+- Scheduling
+- Recovery and resume
+
+## Project
+
+A simple Python calculator application.
+
+## Development
+
+Run tests:
+
+```bash
+python -m pytest
